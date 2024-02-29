@@ -1,0 +1,28 @@
+<main>
+    <form>
+        <label>Nombre
+            <input type="text" [(ngModel)]="nombre" name="nombre">
+        </label>
+        <label>Apellido
+            <input type="text" [(ngModel)]="apellido" name="apellido">
+        </label>
+        <label>Correo
+            <input type="email" [(ngModel)]="email" name="email">
+        </label>
+        <label>Numero
+            <input type="text" [(ngModel)]="numero" name="numero">
+        </label>
+        <label>Contraseña
+            <input type="password" [(ngModel)]="contrasena" name="contrasena">
+        </label>
+        <button (click)="mostrarDatos()">Registro</button>
+    </form>
+
+    <app-registro 
+    [nombresHijo] = "nombreEnviado" 
+    [apellidosHijo]="apellidoEnviado"
+    [emailHijo]="emailEnviado"
+    [numeroHijo]="numeroEnviado"
+    >
+</app-registro>
+</main>
