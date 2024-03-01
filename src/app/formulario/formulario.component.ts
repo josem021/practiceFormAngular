@@ -23,6 +23,11 @@ export class FormularioComponent {
     this.apellidoEnviado = this.apellido;
     this.emailEnviado = this.email;
     this.numeroEnviado = this.numero;
+
+    
+  }
+  enviarDatosHijo(datos:string) {
+    this.nombre = datos
   }
 
 }

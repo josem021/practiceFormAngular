@@ -1,28 +1,32 @@
-<main>
-    <form>
-        <label>Nombre
-            <input type="text" [(ngModel)]="nombre" name="nombre">
-        </label>
-        <label>Apellido
-            <input type="text" [(ngModel)]="apellido" name="apellido">
-        </label>
-        <label>Correo
-            <input type="email" [(ngModel)]="email" name="email">
-        </label>
-        <label>Numero
-            <input type="text" [(ngModel)]="numero" name="numero">
-        </label>
-        <label>Contraseña
-            <input type="password" [(ngModel)]="contrasena" name="contrasena">
-        </label>
-        <button (click)="mostrarDatos()">Registro</button>
-    </form>
-
-    <app-registro 
-    [nombresHijo] = "nombreEnviado" 
-    [apellidosHijo]="apellidoEnviado"
-    [emailHijo]="emailEnviado"
-    [numeroHijo]="numeroEnviado"
-    >
-</app-registro>
-</main>
+<body>
+    <main>
+        <form>
+            <h1>Registro</h1>
+            <label>
+                <input type="text" [(ngModel)]="nombre" name="nombre" placeholder="nombre">
+            </label>
+            <label>
+                <input type="text" [(ngModel)]="apellido" name="apellido" placeholder="apellido">
+            </label>
+            <label>
+                <input type="email" [(ngModel)]="email" name="email" placeholder="email">
+            </label>
+            <label>
+                <input type="text" [(ngModel)]="numero" name="numero" placeholder="numero">
+            </label>
+            <label>
+                <input type="password" [(ngModel)]="contrasena" name="contrasena" placeholder="contraseña">
+            </label>
+            <button type="reset" (click)="mostrarDatos()">Registro</button>
+        </form>
+    
+        <app-registro 
+        [nombresHijo] = "nombreEnviado" 
+        [apellidosHijo]="apellidoEnviado"
+        [emailHijo]="emailEnviado"
+        [numeroHijo]="numeroEnviado"
+        (enviarDatos)="enviarDatosHijo($event)"
+        >
+    </app-registro>
+    </main>
+</body>
