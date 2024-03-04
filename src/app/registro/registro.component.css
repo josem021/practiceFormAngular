@@ -1,0 +1,28 @@
+.datosN {
+    border: 0.1vw solid;
+    border-radius: 0.6vw;
+    padding: 2.2vw;
+    
+}
+.datosN p {
+    font-size: 1.2em;
+    
+}
+.buttonSend {
+    height: 4vh;
+    width: 16vh;
+    border: none;
+    border-radius: 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonSend:hover {
+    border: 0.2vw solid;
+    background-color: white;
+    color: black;
+    animation: ease;
+}

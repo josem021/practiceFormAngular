@@ -19,14 +19,13 @@ export class RegistroComponent {
 
   enviarDatosM() {
     /* this.enviarDatos.emit(this.nombresHijo); */
-    let nombre, apellido, email, numero;
-    let datosAlmacenados:any = [
-      nombre =  this.nombresHijo,
-      apellido = this.apellidosHijo,
-      email = this.emailHijo,
-      numero = this.numeroHijo
-    ]
-
-    this.enviarDatos.emit(datosAlmacenados());
+    let datosAlmacenados:any = {
+      nombre:  this.nombresHijo,
+      apellido: this.apellidosHijo,
+      email: this.emailHijo,
+      numero: this.numeroHijo
+    }
+      
+    this.enviarDatos.emit(datosAlmacenados);
   }
 } 

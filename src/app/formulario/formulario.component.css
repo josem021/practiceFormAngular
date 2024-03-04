@@ -20,11 +20,13 @@ form {
     border-radius: 0.5vw;
     padding: 2.2vw;
     gap: 2.2vw;
+    max-width: 22vw;
+    margin: 2vw;
 }
 form input {
     font-size: 1.1rem;
-    width: 18rem;
-    height: 2rem;
+    width: 32vh;
+    height: 4vh;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -35,7 +37,22 @@ form input::placeholder {
 }
 form input:focus {
     font-size: 1.1rem;
+    height: 4vh;
 }
-form button {
-    width: 10rem;
+.buttonRegister {
+    height: 4vh;
+    width: 16vh;
+    border: none;
+    border-radius: 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttonRegister:hover {
+    border: 0.2vw solid;
+    background-color: white;
+    color: black;
+    animation: ease;
 }

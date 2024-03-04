@@ -31,7 +31,7 @@ export class FormularioComponent {
     this.apellido = datos.apellido;
     this.email = datos.email;
     this.numero = datos.numero;
-
+    
   }
 
 }
