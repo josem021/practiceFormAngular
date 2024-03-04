@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, input } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormularioComponent } from '../formulario/formulario.component';
 import { Input } from '@angular/core';
 
@@ -15,9 +15,18 @@ export class RegistroComponent {
   @Input () emailHijo: string ="";
   @Input () numeroHijo: string ="";
 
-  @Output () enviarDatos = new EventEmitter<string>();
+  @Output () enviarDatos = new EventEmitter<any>();
 
   enviarDatosM() {
-    this.enviarDatos.emit(this.nombresHijo);
+    /* this.enviarDatos.emit(this.nombresHijo); */
+    let nombre, apellido, email, numero;
+    let datosAlmacenados:any = [
+      nombre =  this.nombresHijo,
+      apellido = this.apellidosHijo,
+      email = this.emailHijo,
+      numero = this.numeroHijo
+    ]
+
+    this.enviarDatos.emit(datosAlmacenados());
   }
-}
+} 

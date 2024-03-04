@@ -26,8 +26,12 @@ export class FormularioComponent {
 
     
   }
-  enviarDatosHijo(datos:string) {
-    this.nombre = datos
+  enviarDatosHijo(datos:any) {
+    this.nombre = datos.nombre;
+    this.apellido = datos.apellido;
+    this.email = datos.email;
+    this.numero = datos.numero;
+
   }
 
 }
