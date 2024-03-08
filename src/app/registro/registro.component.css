@@ -1,12 +1,14 @@
 .datosN {
+    display: flex;
+    flex-direction: column;
     border: 0.1vw solid;
     border-radius: 0.6vw;
     padding: 2.2vw;
-    
+    gap: 1vh;
 }
-.datosN p {
-    font-size: 1.2em;
-    
+
+.datosN input {
+    font-size: 1.1em;
 }
 .buttonSend {
     height: 4vh;
@@ -15,7 +17,7 @@
     border-radius: 2vw;
     background-color: black;
     color: white;
-    font-size: 1em;
+    font-size: 2vh;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -25,4 +27,10 @@
     background-color: white;
     color: black;
     animation: ease;
+}
+.inputField {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

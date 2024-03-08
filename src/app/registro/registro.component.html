@@ -1,9 +1,22 @@
 <section>
     <article>
         <div class="datosN">
-            <p>Su apellido es: {{apellidosHijo}}</p>
-            <p>Su email es: {{emailHijo}}</p>
-            <p>Su numero es: {{numeroHijo}}</p>
+            <input type="text" value="{{nombresHijo}}" placeholder="Su nombre es..." readonly class="inputField">
+            <button type="button" class="buttonUpdate">Actualizar</button>
+            <button type="button" class="buttonDelete">Eliminar</button>
+
+            <input type="text" value="{{apellidosHijo}}" placeholder="Su apellido es..." readonly class="inputField">
+            <button type="button" class="buttonUpdate">Actualizar</button>
+            <button type="button" class="buttonDelete">Eliminar</button>
+
+            <input type="text" value="{{emailHijo}}" placeholder="Su email es..." readonly class="inputField">
+            <button type="button" class="buttonUpdate">Actualizar</button>
+            <button type="button" class="buttonDelete">Eliminar</button>
+
+            <input type="text" value="{{numeroHijo}}" placeholder="Su número es..." readonly class="inputField">
+            <button type="button" class="buttonUpdate">Actualizar</button>
+            <button type="button" class="buttonDelete">Eliminar</button>
+
             <button type="reset" class="buttonSend" (click)="enviarDatosM()">Enviar Datos</button>
         </div>
     </article>
